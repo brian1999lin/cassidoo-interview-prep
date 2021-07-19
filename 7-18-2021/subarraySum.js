@@ -13,8 +13,8 @@ const subarraySum = (inputArr, inputSum) => {
   for(let i = 0; i < inputArr.length; i++) {
     let sum = 0;
     
+	// inner loop to traverse array and find sum starting from i-th index
     for(let j = i; j < inputArr.length; j++) {
-      // inner loop to traverse array and find sum starting from i-th index
       sum += inputArr[j];
       if(sum === inputSum) numArrays++;
     }
